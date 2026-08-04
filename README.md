@@ -33,7 +33,7 @@ student-performance-predictor/
 │   └── predict.py
 │
 ├── model/
-│   └── (trained ML models will be saved here)
+│   └── student_performance_model.pkl
 │
 ├── api/
 │   └── main.py
@@ -139,16 +139,59 @@ Stored processed training and testing datasets for model training.
 
 ---
 
-# 🚀 **Next Steps (Day 3 Plan)**
-- Train multiple ML models  
-- Compare performance (MAE, RMSE, R²)  
-- Select best model  
-- Save trained model  
-- Begin feature importance analysis  
+# 📅 **Day 3 — Model Training (Completed)**
+
+### ✔️ Loaded Preprocessed Data
+Used `train_processed.csv` and `test_processed.csv` created in Day 2.
+
+### ✔️ Trained Multiple Models
+- **Linear Regression**  
+- **Random Forest Regressor**  
+- **Gradient Boosting Regressor**
+
+Each model was trained using the processed training dataset.
+
+### ✔️ Evaluated Models
+Metrics used:
+- **MAE (Mean Absolute Error)**  
+- **RMSE (Root Mean Squared Error)**  
+- **R² Score**
+
+A custom evaluation function was used to compute all metrics.
+
+### ✔️ Model Comparison
+A results table was generated to compare all models.  
+**Random Forest Regressor** achieved the best performance overall.
+
+### ✔️ Saved Best Model
+The best model was saved as:
+
+```
+model/student_performance_model.pkl
+```
+
+This model will be used for feature importance analysis and API deployment.
+
+---
+
+## 🧠 **Key Outcomes of Day 3**
+- Multiple ML models trained and evaluated  
+- Random Forest selected as the best model  
+- Model saved for future use  
+- Project ready for Day 4 (Feature Importance)
+
+---
+
+# 🚀 **Next Steps (Day 4 Plan)**
+- Analyze feature importance  
+- Visualize top contributing factors  
+- Generate insights for the final report  
+- Prepare model explanation for README and API documentation  
 
 ---
 
 # 📅 **Project Status**
 - **Day 1 — Completed**  
 - **Day 2 — Completed**  
-- Day 3 begins next.
+- **Day 3 — Completed**  
+- Day 4 begins next.
